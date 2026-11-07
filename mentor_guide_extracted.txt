@@ -1,0 +1,139 @@
+0: ENILS Setup and Student Testing Guide
+1: Oct 7, 2026 · @Manjunath S
+2: Overview
+3: ENILS (Edge-Native Interactive Learning System) is an offline voice tutor: a student asks a question aloud and hears a short spoken answer, with no internet connection and no paid cloud service. This guide takes you from the shared project folder to a working test with students.
+4: The pipeline runs entirely on the computer's processor:
+5: Speech to text: faster-whisper (tiny.en model) turns the student's voice into text.
+6: Answer generation: a small language model (Llama-3.2-1B, quantized) writes a short answer.
+7: Text to speech: Piper (en_US-lessac-medium voice) speaks the answer.
+8: This is a Phase 1 prototype on a laptop. It will later move to a Raspberry Pi class board, so the software uses only the processor and needs no graphics card.
+9: What you will do: set up the software once, run three short checks, then run supervised sessions with a few students and note what works and what does not.
+10: A teacher or adult should supervise every session. The model is small and its answers can be wrong, so treat it as a prototype under evaluation, not a trusted source.
+11: What you need
+12: A Windows laptop with 8 GB of RAM, a microphone and a speaker or headset is enough; internet is needed only once, to install Python packages.
+13: Computer
+14: Windows 10 or 11, Intel i5 / AMD Ryzen 5 or better, 8 GB RAM or more
+15: About 5 GB of free disk space
+16: No graphics card needed: everything runs on the CPU
+17: A working microphone and speaker (a USB headset gives the cleanest audio)
+18: Anaconda installed (it provides Python)
+19: What is in the shared folder
+20: If any of the three model files is missing, setup step 4 will tell you which one.
+21: One-time setup
+22: Setup is six steps and ends with a check that every model file is in place. Run all commands in Anaconda Prompt (search for it in the Start menu), not PowerShell.
+23: Step 1: Copy the project. Copy the whole enils folder to a short path with no special characters, for example D:\ENILS\enils. Keep the folder structure exactly as shared.
+24: Step 2: Open the project folder.
+25: cd /d D:\ENILS\enils
+26: Step 3: Create the Python environment.
+27: conda create -n enils python=3.11 -y
+conda activate enils
+28: The prompt should now start with (enils). Activate it again with conda activate enils every time you open a new Anaconda Prompt.
+29: Step 4: Install the packages (needs internet, once). Install the language-model engine first, from a prebuilt package, so no compiler is needed:
+30: pip install llama-cpp-python --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cpu --only-binary=:all:
+pip install -r requirements.txt
+31: Use pip only. Do not use conda install for these packages.
+32: Step 5: Check the model files.
+33: python scripts\check_models.py
+34: Every line must say [OK]. A line saying [MISSING] names the file that is not where it should be (see the table in the previous section).
+35: Step 6: Set the thread count. Open config\default.yaml in Notepad and set cpu_threads to 4. Higher values did not make the model faster in our tests, and 4 matches the target board.
+36: After step 5 passes, the internet can be switched off: the program should not download anything at run time. To confirm, disconnect from the network and repeat the checks in the next section.
+37: First checks before students
+38: Run these three checks yourself before any student sits down; together they take about ten minutes. Always run them inside the (enils) environment, from the project folder.
+39: Check A: speakers and microphone.
+40: python scripts\test_audio.py
+41: You should hear a beep, then a spoken sentence, then be asked to speak for 3 seconds. The script prints the microphone level and plays your recording back. If you hear nothing, find your speaker in the printed device list and set output_device to its number in config\default.yaml; do the same with input_device for the microphone.
+42: Check B: one recorded question (skip if data\samples_ogg\ has no recordings).
+43: python scripts\test_file_pipeline.py data\samples_ogg\sample_1.ogg --play
+44: The script prints what it heard, the answer, and a latency table, then speaks the answer. It also saves the spoken reply in outputs\.
+45: Check C: live microphone, push-to-talk.
+46: python run.py --ptt
+47: Press Enter, wait for the prompt, then ask a short question such as "What are coefficients?" After the spoken answer a latency table appears. The line to watch is perceived latency: the time from the end of your question to the start of the answer. The project target is 2.5 seconds or less; on our development laptop it was 3.2 to 3.7 seconds before tuning, and we expect roughly 2.5 to 3 seconds now (an estimate, not a guarantee).
+48: To stop the program, click its window and press Ctrl+C.
+49: Before moving to students, confirm:
+50: ☐ Check A: you heard the beep and the voice, and the microphone level was above 0.01
+51: ☐ Check B: the transcript matched what was said (or skipped)
+52: ☐ Check C: three different questions each got a spoken answer
+53: ☐ The program stopped cleanly with Ctrl+C
+54: Running a session with students
+55: Run one student at a time, in a quiet room, in push-to-talk mode, with an adult beside the laptop. Get the school's or parents' permission before children take part.
+56: Room and equipment
+57: Quiet room; switch off fans and move away from corridors if you can
+58: Headset microphone about 10 to 15 cm from the mouth, or the laptop microphone with the student sitting close
+59: Speaker volume at a comfortable middle level
+60: Laptop plugged in: battery saver mode slows the processor and raises latency
+61: Start the tutor
+62: conda activate enils
+cd /d D:\ENILS\enils
+python run.py --ptt --subject math
+63: Change math to science, language or general to match the lesson. The program loads for a few seconds, then asks everyone to stay quiet for about one second while it measures background noise. When it says the subject is ready, the first student can begin.
+64: How students ask questions
+65: The adult presses Enter, then the student speaks.
+66: One short question at a time, in English, at normal speed.
+67: The student stops talking and waits: a pause of under a second ends the question.
+68: The tutor speaks the answer. Wait until it finishes before the next question.
+69: Push-to-talk is recommended. Running python run.py without --ptt keeps the microphone open all the time, so background talking is treated as a question; use it only in a very quiet room.
+70: Privacy
+71: The program does not save recordings or transcripts. The questions and answers appear on screen only and disappear when the window closes. If you record sessions yourself, or copy the screen, you need consent for that too.
+72: Ending
+73: Click the window and press Ctrl+C. Start a fresh run for each new student so the tutor does not carry over the previous student's last three questions.
+74: Settings you may change
+75: All settings live in config\default.yaml; open it in Notepad, edit, save, and restart the program. Change one value at a time and note the result.
+76: If you edit the file and the program fails to start, the cause is almost always indentation or a missing space after a colon. Keep the layout exactly as it was.
+77: Troubleshooting
+78: Most problems come from the wrong prompt window, an inactive environment, or the wrong audio device. If a fix does not work, copy the full error text and send it to the project owner.
+79: Known limitations and feedback
+80: This prototype can give wrong answers and mishear children, and your notes from the session are what will improve it.
+81: Known limitations
+82: Answers can be wrong. The 1B-parameter model sometimes explains the wrong concept or states facts incorrectly. In our tests it answered an algebra question with a physics example. An adult must check answers.
+83: Speech recognition makes mistakes. On a small 4-recording test, about 1 word in 10 was wrong, for example "what are constants" heard as "water constants". Four recordings are too few to be reliable, which is why your session log matters.
+84: English only. Kannada is planned for a later version.
+85: Speed. Expect roughly 2.5 to 3 seconds before the answer starts (an estimate from our laptop tests). Slower laptops will be slower.
+86: No wake word and no screen interface yet. Press Enter to ask, or leave the microphone open in a quiet room.
+87: No memory between runs. Within a run it remembers the last three exchanges only.
+88: Session log: please fill in one row per question
+89: Use a student number or initials, never full names.
+90: The program prints "You:" (what it heard) and the perceived latency after every answer; copy both from the window.
+91: Questions to answer afterwards
+92: Did the students understand the spoken answers, and were they too long or too short?
+93: Which words or kinds of questions were misheard most often?
+94: Was the wait for an answer acceptable to the students?
+95: Which subject (math, science, language) worked best, and which worst?
+96: Did students need help knowing when to speak or when to wait?
+97: Send the filled log and your answers to the project owner after the session.
+['Item', 'Location inside the project folder', 'Approx. size']
+['Project code', 'enils\\ (run.py, src, scripts, config)', 'small']
+['Speech-to-text model (tiny.en)', 'models\\whisper\\tiny.en\\', 'under 100 MB']
+['Language model (Llama-3.2-1B, Q4_K_M)', 'models\\llm\\Llama-3.2-1B-Instruct-Q4_K_M.gguf', '808 MB']
+['Voice (Piper lessac-medium)', 'models\\piper\\en_US-lessac-medium.onnx and .onnx.json', '63 MB']
+['Setting', 'Default', 'What it does', 'When to change it']
+['cpu_threads', '4', 'Processor threads used by the models', 'Leave at 4']
+['audio.input_device', 'null', 'Microphone number (see test_audio.py list)', 'Wrong microphone is used']
+['audio.output_device', 'null', 'Speaker number', 'No sound from the speaker']
+['audio.silence_ms', '600', 'Silence that ends a question', 'Raise to 800 if students are cut off mid-sentence']
+['audio.min_threshold', '0.01', 'Lowest loudness counted as speech', 'Raise in a noisy room, lower for quiet voices']
+['audio.max_record_s', '15', 'Longest single question, in seconds', 'Rarely']
+['llm.max_sentences', '3', 'Stops the answer after this many sentences', 'Lower for faster, shorter answers']
+['llm.max_tokens', '160', 'Hard limit on answer length', 'Rarely']
+['llm.temperature', '0.4', 'Lower is more predictable', 'Rarely']
+['llm.history_turns', '3', 'Past exchanges the tutor remembers', 'Set to 1 to keep only the last exchange']
+['stt.model_dir', 'models/whisper/tiny.en', 'Speech recognition model', 'Only if told to try base.en']
+['tutor.subject', 'general', 'Default tutoring style: general, math, science, language', 'The --subject option overrides it']
+['Problem', 'Likely cause', 'Fix']
+['conda is not recognized', 'Wrong window', 'Open Anaconda Prompt from the Start menu, not PowerShell or Command Prompt']
+['ModuleNotFoundError for a package', 'Environment not active', 'Run conda activate enils; the prompt must start with (enils)']
+['llama-cpp-python install fails or starts compiling', 'Wrong Python version or a missing prebuilt package', 'Check python --version shows 3.11, then repeat the install command from step 4 exactly, including --only-binary=:all:']
+['check_models.py shows [MISSING]', 'A file is in the wrong folder or has a different name', 'Compare with the table in the section What you need; the speech model files must sit directly inside models\\whisper\\tiny.en\\']
+['No sound from the tutor', 'Wrong speaker, or volume muted', 'Run test_audio.py, note your speaker number, set audio.output_device, and check the Windows volume']
+['Microphone level near zero', 'Wrong microphone, muted, or no permission', 'Set audio.input_device; in Windows Settings go to Privacy, then Microphone, and allow desktop apps']
+['The question is cut off mid-sentence', 'Student pauses longer than the silence limit', 'Raise audio.silence_ms to 800 or 1000']
+['Background noise triggers questions', 'Open microphone in a noisy room', 'Use --ptt, move the microphone closer, or raise audio.min_threshold']
+['Words are misheard', 'Fast speech, distance from the microphone, or noise', 'Move closer, slow down, quieter room; record each case in the feedback table']
+['Answers take longer than about 3 seconds', 'Laptop on battery, or other heavy programs open', 'Plug in the charger, close browsers and video calls, keep cpu_threads at 4']
+['The program will not stop', 'It is busy with an answer', 'Press Ctrl+C again, or close the window']
+['Startup error mentioning the config file', 'Indentation or spacing damaged in default.yaml', 'Restore the original layout; use spaces, never tabs']
+['Student ID', 'Class', 'Question (as the student said it)', 'What the tutor heard', 'Answer correct? (yes / partly / no)', 'Latency (s)', 'Notes']
+['', '', '', '', '', '', '']
+['', '', '', '', '', '', '']
+['', '', '', '', '', '', '']
+['', '', '', '', '', '', '']
+['', '', '', '', '', '', '']

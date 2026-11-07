@@ -1,0 +1,44 @@
+# ENILS default configuration (paths are relative to the project root)
+
+force_cpu: true        # hides GPUs from all libraries; everything runs on CPU
+language: en
+cpu_threads: 4         # set to your PHYSICAL core count
+
+audio:
+  sample_rate: 16000
+  input_device: null   # null = system default; or device index/name (see: python -m sounddevice)
+  output_device: null
+  block_ms: 30
+  silence_ms: 600      # silence that ends an utterance (adds to perceived latency)
+  min_speech_ms: 300   # ignore clicks/noises shorter than this
+  max_record_s: 15
+  energy_margin: 3.0   # speech threshold = ambient noise * margin
+  min_threshold: 0.01  # lowest allowed speech threshold (RMS, 0..1)
+
+stt:
+  model_dir: models/whisper/tiny.en
+  compute_type: int8
+  beam_size: 1
+  vad_filter: true
+
+llm:
+  model_path: models/llm/Llama-3.2-1B-Instruct-Q4_K_M.gguf
+  n_ctx: 2048
+  max_tokens: 220
+  temperature: 0.4
+  history_turns: 3
+  max_sentences: 4
+
+
+tts:
+  model_path: models/piper/en_US-lessac-medium.onnx
+
+tutor:
+  subject: science     # general | math | science | language
+
+rag:
+  enabled: true
+  knowledge_dir: data/knowledge
+  top_k: 2
+  max_context_chars: 700
+

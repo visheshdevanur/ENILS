@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgIcon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+
+    <linearGradient id="cyanBlue" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="50%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#60a5fa" />
+    </linearGradient>
+
+    <linearGradient id="tealEmerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="50%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="24" result="blur2" />
+      <feComposite in="SourceGraphic" in2="blur2" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Squircle App Icon Base -->
+  <rect width="512" height="512" rx="112" fill="url(#bgIcon)" />
+  <rect width="508" height="508" x="2" y="2" rx="110" fill="none" stroke="#1e293b" stroke-width="2.5" />
+
+  <!-- Ambient Backdrop Glow -->
+  <circle cx="256" cy="235" r="140" fill="#06b6d4" opacity="0.15" filter="url(#softGlow)" />
+
+  <!-- Outer Edge Diamond Circuit Frame -->
+  <path d="M 256 95 L 395 235 L 256 375 L 117 235 Z" 
+        fill="none" stroke="#334155" stroke-width="2.5" stroke-dasharray="8 8" opacity="0.6" />
+
+  <!-- Circuit Pins -->
+  <circle cx="256" cy="95" r="5" fill="#38bdf8" />
+  <circle cx="395" cy="235" r="5" fill="#38bdf8" />
+  <circle cx="256" cy="375" r="5" fill="#38bdf8" />
+  <circle cx="117" cy="235" r="5" fill="#38bdf8" />
+
+  <!-- Voice Soundwave Arcs -->
+  <g stroke-linecap="round">
+    <path d="M 175 160 A 110 110 0 0 0 175 310" fill="none" stroke="url(#cyanBlue)" stroke-width="6.5" opacity="0.85" />
+    <path d="M 148 180 A 140 140 0 0 0 148 290" fill="none" stroke="#0ea5e9" stroke-width="4.5" opacity="0.5" />
+
+    <path d="M 337 160 A 110 110 0 0 1 337 310" fill="none" stroke="url(#cyanBlue)" stroke-width="6.5" opacity="0.85" />
+    <path d="M 364 180 A 140 140 0 0 1 364 290" fill="none" stroke="#0ea5e9" stroke-width="4.5" opacity="0.5" />
+  </g>
+
+  <!-- Open Book of Knowledge -->
+  <g>
+    <!-- Left Wing/Page -->
+    <path d="M 248 300 C 210 290 170 300 156 260 C 156 210 195 195 248 202 Z" 
+          fill="url(#cyanBlue)" opacity="0.9" />
+    <path d="M 248 300 C 220 292 186 300 174 270 C 174 235 206 222 248 225 Z" 
+          fill="#1e1b4b" opacity="0.45" />
+
+    <!-- Right Wing/Page -->
+    <path d="M 264 300 C 302 290 342 300 356 260 C 356 210 317 195 264 202 Z" 
+          fill="url(#tealEmerald)" opacity="0.9" />
+    <path d="M 264 300 C 292 292 326 300 338 270 C 338 235 306 222 264 225 Z" 
+          fill="#1e1b4b" opacity="0.45" />
+
+    <!-- Book Spine -->
+    <line x1="256" y1="310" x2="256" y2="204" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round" />
+  </g>
+
+  <!-- Edge-Native Microchip & Intelligence Core -->
+  <g transform="translate(256, 150)">
+    <rect x="-24" y="-24" width="48" height="48" rx="10" fill="#0f172a" stroke="url(#cyanBlue)" stroke-width="4" filter="url(#glow)" />
+    
+    <!-- Microchip Pins -->
+    <line x1="-24" y1="-10" x2="-32" y2="-10" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" />
+    <line x1="-24" y1="10" x2="-32" y2="10" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" />
+    <line x1="24" y1="-10" x2="32" y2="-10" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" />
+    <line x1="24" y1="10" x2="32" y2="10" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" />
+    <line x1="-10" y1="-24" x2="-10" y2="-32" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" />
+    <line x1="10" y1="-24" x2="10" y2="-32" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" />
+
+    <!-- Glowing Intelligence Core Spark -->
+    <circle cx="0" cy="0" r="9" fill="url(#goldAccent)" filter="url(#glow)" />
+    <polygon points="0,-14 4,-4 14,0 4,4 0,14 -4,4 -14,0 -4,-4" fill="#ffffff" />
+    <circle cx="0" cy="0" r="16" fill="none" stroke="#f59e0b" stroke-width="1.5" opacity="0.6" stroke-dasharray="4 4" />
+  </g>
+
+  <!-- App Label -->
+  <text x="256" y="445" 
+        font-family="'Inter', 'Segoe UI', system-ui, sans-serif" 
+        font-weight="900" 
+        font-size="44" 
+        letter-spacing="10" 
+        fill="#ffffff" 
+        text-anchor="middle">
+    ENILS
+  </text>
+  <text x="256" y="475" 
+        font-family="'Inter', 'Segoe UI', system-ui, sans-serif" 
+        font-weight="600" 
+        font-size="13" 
+        letter-spacing="4" 
+        fill="#38bdf8" 
+        text-anchor="middle">
+    OFFLINE AI TUTOR
+  </text>
+</svg>

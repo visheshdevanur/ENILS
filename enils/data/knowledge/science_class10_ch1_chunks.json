@@ -1,0 +1,259 @@
+[
+  {
+    "id": "ch1_sec0_intro_activities",
+    "title": "Chemical Reactions: Everyday Observations and Activities 1.1 to 1.3",
+    "pages": "1-2",
+    "section": "Introduction",
+    "keywords": [
+      "chemical reaction",
+      "milk",
+      "iron tawa",
+      "grapes fermented",
+      "respiration",
+      "magnesium ribbon",
+      "dazzling white flame",
+      "magnesium oxide",
+      "zinc granules",
+      "lead nitrate",
+      "potassium iodide",
+      "evolution of gas",
+      "change in state",
+      "change in colour",
+      "change in temperature"
+    ],
+    "text": "Consider the following situations of daily life and think what happens when:\n- milk is left at room temperature during summers.\n- an iron tawa/pan/nail is left exposed to humid atmosphere.\n- grapes get fermented.\n- food is cooked.\n- food gets digested in our body.\n- we respire.\nIn all the above situations, the nature and identity of the initial substance have changed. Whenever a chemical change occurs, a chemical reaction has taken place.\n\nActivity 1.1:\nClean a magnesium ribbon about 3-4 cm long by rubbing with sandpaper. Hold it with tongs and burn it using a spirit lamp/burner.\nObservation: Magnesium ribbon burns with a dazzling white flame and changes into a white powder. This powder is magnesium oxide (MgO), formed by reaction between magnesium and oxygen present in air.\n\nActivity 1.2:\nTake lead nitrate solution in a test tube. Add potassium iodide solution to this.\nObservation: A yellow precipitate of lead iodide is formed.\n\nActivity 1.3:\nTake zinc granules in a conical flask/test tube. Add dilute hydrochloric acid or sulphuric acid (handle with care).\nObservation: Evolution of hydrogen gas bubbles around zinc granules and the conical flask gets warm (rise in temperature).\n\nObservations that determine whether a chemical reaction has taken place:\n1. Change in state\n2. Change in colour\n3. Evolution of a gas\n4. Change in temperature."
+  },
+  {
+    "id": "ch1_sec1_1_equations",
+    "title": "1.1 Chemical Equations and Word Equations",
+    "pages": "2-3",
+    "section": "1.1",
+    "keywords": [
+      "chemical equations",
+      "word equation",
+      "reactants",
+      "products",
+      "LHS",
+      "RHS",
+      "skeletal equation",
+      "arrow",
+      "magnesium oxide"
+    ],
+    "text": "When a magnesium ribbon is burnt in oxygen, it gets converted to magnesium oxide. This description can be written in a shorter form as a word-equation:\nMagnesium + Oxygen -> Magnesium oxide\n(Reactants) (Product)\n\nThe substances that undergo chemical change (magnesium and oxygen) are the reactants. The new substance formed is magnesium oxide, which is the product.\nA word-equation shows change of reactants to products through an arrow placed between them. Reactants are written on the left-hand side (LHS) with a plus sign (+) between them. Products are written on the right-hand side (RHS) with a plus sign (+) between them. The arrowhead points towards the products and shows the direction of the reaction.\n\n1.1.1 Writing a Chemical Equation:\nUsing chemical formulae instead of words makes equations concise:\nMg + O2 -> MgO\nCount and compare atoms of each element on LHS and RHS. If the number of atoms is not equal on both sides, mass is not the same and the equation is unbalanced. Such an equation is called a skeletal chemical equation."
+  },
+  {
+    "id": "ch1_sec1_1_2_balancing",
+    "title": "1.1.2 Balanced Chemical Equations & State Symbols",
+    "pages": "3-5",
+    "section": "1.1.2",
+    "keywords": [
+      "balanced chemical equation",
+      "law of conservation of mass",
+      "hit-and-trial method",
+      "physical states",
+      "solid",
+      "liquid",
+      "gas",
+      "aqueous",
+      "steam",
+      "catalyst",
+      "sunlight"
+    ],
+    "text": "Law of Conservation of Mass: Mass can neither be created nor destroyed in a chemical reaction. The total mass of elements present in the products must equal the total mass of elements present in the reactants. The number of atoms of each element remains the same before and after a reaction.\n\nExample of Balanced Equation:\nZn + H2SO4 -> ZnSO4 + H2\nZn: 1 LHS, 1 RHS. H: 2 LHS, 2 RHS. S: 1 LHS, 1 RHS. O: 4 LHS, 4 RHS. (Balanced)\n\nHit-and-Trial Method for Balancing (e.g., Fe + H2O -> Fe3O4 + H2):\nStep 1: Draw boxes around each formula; do not alter formulas inside boxes.\nStep 2: Count atoms of different elements in unbalanced equation.\nStep 3: Equalise atoms starting with compound containing maximum atoms (e.g. oxygen in Fe3O4: put 4 H2O). Equation becomes: Fe + 4H2O -> Fe3O4 + H2.\nStep 4: Balance hydrogen atoms: 4 H2O has 8 H atoms, so put 4 H2 on RHS: Fe + 4H2O -> Fe3O4 + 4H2.\nStep 5: Balance iron atoms: take 3 Fe on LHS: 3Fe + 4H2O -> Fe3O4 + 4H2.\nStep 6: Count atoms on both sides to verify: 3 Fe, 8 H, 4 O on both sides.\n\nStep 7: Physical States:\nTo make equations more informative, notations are used:\n(s) = solid, (l) = liquid, (g) = gas, (aq) = aqueous (solution in water).\nBalanced equation with state symbols:\n3Fe(s) + 4H2O(g) -> Fe3O4(s) + 4H2(g)  [Note: (g) indicates water used in the form of steam].\nReaction conditions like temperature, pressure, or catalyst are written above/below the arrow:\nCO(g) + 2H2(g) --(340 atm)--> CH3OH(l)\n6CO2(aq) + 12H2O(l) --(Sunlight / Chlorophyll)--> C6H12O6(aq) + 6O2(aq) + 6H2O(l)"
+  },
+  {
+    "id": "ch1_sec1_2_1_combination",
+    "title": "1.2.1 Combination Reactions and Exothermic Reactions",
+    "pages": "6-7",
+    "section": "1.2.1",
+    "keywords": [
+      "combination reaction",
+      "calcium oxide",
+      "quick lime",
+      "slaked lime",
+      "calcium hydroxide",
+      "exothermic reaction",
+      "burning of coal",
+      "natural gas",
+      "respiration",
+      "compost"
+    ],
+    "text": "Definition of Combination Reaction:\nA reaction in which two or more substances (elements or compounds) combine to form a single product is known as a combination reaction.\n\nActivity 1.4:\nTake calcium oxide (quick lime) in a beaker and slowly add water.\nCaO(s) + H2O(l) -> Ca(OH)2(aq) + Heat\n(Quick lime)           (Slaked lime / calcium hydroxide)\nCalcium oxide reacts vigorously with water to produce slaked lime, releasing a large amount of heat.\n\nMore Examples of Combination Reactions:\n1. Burning of coal: C(s) + O2(g) -> CO2(g)\n2. Formation of water: 2H2(g) + O2(g) -> 2H2O(l)\n\nExothermic Chemical Reactions:\nReactions in which heat is released along with the formation of products are called exothermic chemical reactions.\nExamples of exothermic reactions:\n1. Burning of natural gas: CH4(g) + 2O2(g) -> CO2(g) + 2H2O(g)\n2. Respiration: During digestion, food breaks down into glucose (C6H12O6). Glucose combines with oxygen in cells releasing energy:\n   C6H12O6(aq) + 6O2(aq) -> 6CO2(aq) + 6H2O(l) + energy\n   Therefore, respiration is an exothermic process.\n3. Decomposition of vegetable matter into compost is also exothermic."
+  },
+  {
+    "id": "ch1_sec1_whitewashing",
+    "title": "Whitewashing, Slaked Lime and Marble Formation",
+    "pages": "7",
+    "section": "Do You Know Box",
+    "keywords": [
+      "whitewashing",
+      "slaked lime",
+      "calcium hydroxide",
+      "carbon dioxide",
+      "calcium carbonate",
+      "marble",
+      "CaCO3",
+      "Ca(OH)2"
+    ],
+    "text": "A solution of slaked lime (calcium hydroxide, Ca(OH)2) produced by reacting quicklime with water is used for whitewashing walls.\nCalcium hydroxide reacts slowly with carbon dioxide in the air to form a thin layer of calcium carbonate on the walls:\nCa(OH)2(aq) + CO2(g) -> CaCO3(s) + H2O(l)\n(Calcium hydroxide)       (Calcium carbonate)\n\nCalcium carbonate is formed after two to three days of whitewashing and gives a shiny, bright white finish to the walls.\nInteresting fact: The chemical formula for marble is also CaCO3."
+  },
+  {
+    "id": "ch1_sec1_2_2_decomposition",
+    "title": "1.2.2 Decomposition Reactions (Thermal, Electrolytic, Photolytic) & Endothermic Reactions",
+    "pages": "8-10",
+    "section": "1.2.2",
+    "keywords": [
+      "decomposition reaction",
+      "thermal decomposition",
+      "ferrous sulphate",
+      "ferric oxide",
+      "sulphur dioxide",
+      "sulphur trioxide",
+      "limestone",
+      "cement",
+      "lead nitrate",
+      "nitrogen dioxide",
+      "brown fumes",
+      "electrolysis of water",
+      "silver chloride",
+      "silver bromide",
+      "sunlight",
+      "black and white photography",
+      "endothermic"
+    ],
+    "text": "Definition of Decomposition Reaction:\nA reaction in which a single reactant breaks down to give two or more simpler products is called a decomposition reaction. Decomposition is opposite to combination reaction.\n\n1. Thermal Decomposition (carried out by heating):\na) Ferrous sulphate crystals (FeSO4.7H2O) lose water on heating and change colour from green to white, then decompose:\n   2FeSO4(s) --(Heat)--> Fe2O3(s) + SO2(g) + SO3(g)\n   (Ferrous sulphate)   (Ferric oxide) (Sulphur dioxide) (Sulphur trioxide)\n   Produces characteristic smell of burning sulphur.\nb) Limestone to quicklime:\n   CaCO3(s) --(Heat)--> CaO(s) + CO2(g)\n   (Limestone)         (Quick lime)\n   Quick lime has many industrial uses, notably in the manufacture of cement.\nc) Lead nitrate heating (Activity 1.6):\n   2Pb(NO3)2(s) --(Heat)--> 2PbO(s) + 4NO2(g) + O2(g)\n   (Lead nitrate)          (Lead oxide) (Nitrogen dioxide - brown fumes) (Oxygen)\n   Emission of brown fumes of nitrogen dioxide (NO2) is observed.\n\n2. Electrolytic Decomposition (Activity 1.7 - Electrolysis of Water):\nPassing electric current through acidified water decomposes it:\n2H2O(l) --(Electric current)--> 2H2(g) + O2(g)\nHydrogen gas is collected at the cathode and oxygen at the anode. The volume of hydrogen gas collected is double the volume of oxygen gas because water molecule contains 2 hydrogen atoms for every 1 oxygen atom.\n\n3. Photolytic Decomposition (Decomposition by Sunlight) (Activity 1.8):\nWhite silver chloride turns grey in sunlight:\n2AgCl(s) --(Sunlight)--> 2Ag(s) + Cl2(g)\nSilver bromide behaves similarly:\n2AgBr(s) --(Sunlight)--> 2Ag(s) + Br2(g)\nThese reactions of silver halides are used in black and white photography.\n\nEndothermic Reactions:\nReactions in which energy is absorbed (in the form of heat, light, or electricity) to break bonds are called endothermic reactions."
+  },
+  {
+    "id": "ch1_sec1_2_3_displacement",
+    "title": "1.2.3 Displacement Reactions",
+    "pages": "10-11",
+    "section": "1.2.3",
+    "keywords": [
+      "displacement reaction",
+      "iron nail",
+      "copper sulphate",
+      "iron sulphate",
+      "blue colour fades",
+      "brownish deposit",
+      "zinc",
+      "lead",
+      "reactivity"
+    ],
+    "text": "Definition of Displacement Reaction:\nA chemical reaction in which a more reactive element displaces or removes a less reactive element from its compound (solution) is known as a displacement reaction.\n\nActivity 1.9 (Iron nails in copper sulphate):\nClean iron nails dipped in blue copper sulphate (CuSO4) solution for 20 minutes.\nObservation: The iron nail becomes coated with a brownish layer of copper metal, and the blue colour of the copper sulphate solution fades and changes to light green.\nEquation:\nFe(s) + CuSO4(aq) -> FeSO4(aq) + Cu(s)\n(Iron)  (Copper sulphate - blue) (Iron sulphate - green) (Copper - brown)\n\nOther Examples of Displacement Reactions:\n1. Zinc displacing copper:\n   Zn(s) + CuSO4(aq) -> ZnSO4(aq) + Cu(s)\n   (Zinc) (Copper sulphate) (Zinc sulphate) (Copper)\n2. Lead displacing copper:\n   Pb(s) + CuCl2(aq) -> PbCl2(aq) + Cu(s)\n   (Lead) (Copper chloride) (Lead chloride) (Copper)\nZinc and lead are more reactive metals than copper, so they displace copper from its salt solutions."
+  },
+  {
+    "id": "ch1_sec1_2_4_double_displacement",
+    "title": "1.2.4 Double Displacement and Precipitation Reactions",
+    "pages": "11-12",
+    "section": "1.2.4",
+    "keywords": [
+      "double displacement reaction",
+      "precipitation reaction",
+      "precipitate",
+      "barium sulphate",
+      "sodium sulphate",
+      "barium chloride",
+      "sodium chloride",
+      "exchange of ions",
+      "lead nitrate",
+      "potassium iodide",
+      "lead iodide yellow"
+    ],
+    "text": "Definition of Double Displacement Reaction:\nReactions in which there is an exchange of ions between the reactants to form new compounds are called double displacement reactions.\n\nActivity 1.10:\nMix sodium sulphate solution with barium chloride solution:\nNa2SO4(aq) + BaCl2(aq) -> BaSO4(s) + 2NaCl(aq)\n(Sodium sulphate) (Barium chloride) (Barium sulphate) (Sodium chloride)\nObservation: A white insoluble substance is formed immediately.\n\nPrecipitation Reaction:\nAn insoluble solid substance formed during a chemical reaction that separates out from the solution is called a precipitate. Any reaction that produces an insoluble precipitate is called a precipitation reaction.\nHere, the white precipitate of BaSO4 is formed by the reaction of SO4^(2-) and Ba^(2+) ions.\n\nAnother Example (Activity 1.2):\nLead nitrate reacts with potassium iodide:\nPb(NO3)2(aq) + 2KI(aq) -> PbI2(s) + 2KNO3(aq)\nForms a bright yellow precipitate of lead iodide (PbI2). This is also a double displacement and precipitation reaction."
+  },
+  {
+    "id": "ch1_sec1_2_5_redox",
+    "title": "1.2.5 Oxidation and Reduction (Redox Reactions)",
+    "pages": "12-13",
+    "section": "1.2.5",
+    "keywords": [
+      "oxidation",
+      "reduction",
+      "redox reaction",
+      "copper oxide",
+      "black coating",
+      "hydrogen",
+      "gain of oxygen",
+      "loss of oxygen",
+      "gain of hydrogen",
+      "loss of hydrogen",
+      "ZnO",
+      "carbon",
+      "MnO2",
+      "HCl"
+    ],
+    "text": "Definitions of Oxidation and Reduction:\n- Oxidation: Gain of oxygen OR loss of hydrogen by a substance during a reaction.\n- Reduction: Loss of oxygen OR gain of hydrogen by a substance during a reaction.\n\nRedox Reactions (Oxidation-Reduction):\nReactions in which one reactant gets oxidised while the other reactant gets reduced simultaneously are called redox reactions.\n\nActivity 1.11:\nHeating copper powder in air:\n2Cu + O2 --(Heat)--> 2CuO\nCopper gains oxygen and forms black copper(II) oxide. Copper is oxidised to CuO.\n\nPassing hydrogen gas over heated CuO:\nCuO + H2 --(Heat)--> Cu + H2O\n- CuO loses oxygen -> reduced to Cu.\n- H2 gains oxygen -> oxidised to H2O.\nBoth oxidation and reduction occur together (Redox).\n\nOther Examples of Redox Reactions:\n1. ZnO + C -> Zn + CO\n   ZnO loses oxygen (reduced to Zn); Carbon gains oxygen (oxidised to CO).\n2. MnO2 + 4HCl -> MnCl2 + 2H2O + Cl2\n   MnO2 loses oxygen (reduced to MnCl2); HCl loses hydrogen (oxidised to Cl2)."
+  },
+  {
+    "id": "ch1_sec1_3_corrosion_rancidity",
+    "title": "1.3 Everyday Effects of Oxidation: Corrosion and Rancidity",
+    "pages": "13",
+    "section": "1.3",
+    "keywords": [
+      "corrosion",
+      "rusting of iron",
+      "black coating silver",
+      "green coating copper",
+      "rancidity",
+      "antioxidants",
+      "air tight containers",
+      "nitrogen gas",
+      "chips bags",
+      "fats and oils"
+    ],
+    "text": "1.3.1 Corrosion:\nWhen a metal is attacked by substances around it such as moisture, air, acids, etc., it is said to corrode, and this process is called corrosion.\nExamples of Corrosion:\n- Rusting of iron: Iron articles get coated with a reddish-brown powder when left exposed to moist air.\n- Black coating formed on silver articles due to reaction with sulphur compounds in air.\n- Green coating formed on copper articles (basic copper carbonate) due to reaction with moist CO2.\nCorrosion causes enormous damage to car bodies, bridges, iron railings, ships, and all metal structures, especially those made of iron.\n\n1.3.2 Rancidity:\nWhen fats and oils present in food materials are oxidised by atmospheric oxygen, they become rancid. As a result, their smell and taste change and become unpleasant.\nMethods to Prevent Rancidity:\n1. Adding antioxidants: Substances that prevent or retard oxidation are added to food containing fats and oils.\n2. Airtight containers: Storing food in airtight containers slows down the rate of oxidation.\n3. Flushing with inert gas: Potato chips and snack manufacturers flush bags of chips with an unreactive gas like nitrogen (N2) to displace oxygen and prevent chips from getting oxidised."
+  },
+  {
+    "id": "ch1_sec1_summary",
+    "title": "Chapter 1 Summary: What You Have Learnt",
+    "pages": "14",
+    "section": "Summary",
+    "keywords": [
+      "summary",
+      "complete chemical equation",
+      "balanced equation",
+      "combination",
+      "decomposition",
+      "exothermic",
+      "endothermic",
+      "displacement",
+      "double displacement",
+      "precipitation",
+      "oxidation",
+      "reduction"
+    ],
+    "text": "Key Summary Points:\n1. A complete chemical equation represents reactants, products, and their physical states symbolically.\n2. A chemical equation must always be balanced so that the numbers of atoms of each element are equal on reactant and product sides (satisfying the law of conservation of mass).\n3. In a combination reaction, two or more substances combine to form a single new substance.\n4. Decomposition reactions are the opposite of combination reactions; a single substance breaks down into two or more substances.\n5. Reactions releasing heat along with products are exothermic reactions.\n6. Reactions absorbing energy (heat, light, electricity) are endothermic reactions.\n7. When an element displaces another element from its compound, a displacement reaction occurs.\n8. Two different atoms or groups of atoms (ions) are exchanged in double displacement reactions.\n9. Precipitation reactions produce insoluble salts (precipitates).\n10. Oxidation is the gain of oxygen or loss of hydrogen. Reduction is the loss of oxygen or gain of hydrogen."
+  },
+  {
+    "id": "ch1_sec1_intext_questions",
+    "title": "Textbook In-Text Questions with Accurate Answers",
+    "pages": "6, 10, 13",
+    "section": "In-text Questions",
+    "keywords": [
+      "questions",
+      "magnesium ribbon cleaned sandpaper",
+      "whitewashing substance X calcium oxide",
+      "electrolysis water double volume hydrogen",
+      "iron nail copper sulphate colour change",
+      "chips nitrogen"
+    ],
+    "text": "In-Text Questions and Solutions:\nQ: Why should a magnesium ribbon be cleaned before burning in air?\nA: Magnesium is a reactive metal. When exposed to moist air, it forms a protective coating of basic magnesium carbonate / oxide on its surface. Cleaning with sandpaper removes this oxide layer so magnesium can burn freely in air.\n\nQ: A solution of substance 'X' is used for whitewashing. Name substance 'X' and write its formula, and write its reaction with water.\nA: Substance 'X' is calcium oxide (quicklime), formula CaO. Its reaction with water is: CaO(s) + H2O(l) -> Ca(OH)2(aq) + Heat, producing slaked lime (calcium hydroxide).\n\nQ: Why is the amount of gas collected in one test tube during electrolysis of water double of the other?\nA: Water (H2O) is formed by combining hydrogen and oxygen in a 2:1 ratio by volume. On decomposition, 2 volumes of hydrogen gas are liberated at the cathode for every 1 volume of oxygen gas liberated at the anode. The gas with double volume is hydrogen.\n\nQ: Why does the colour of copper sulphate solution change when an iron nail is dipped in it?\nA: Iron is more reactive than copper. It displaces copper from copper sulphate solution to form green iron sulphate (FeSO4) and deposits brownish copper on the nail: Fe(s) + CuSO4(aq) -> FeSO4(aq) + Cu(s). Hence the blue colour fades to light green.\n\nQ: Why are oil and fat containing food items flushed with nitrogen?\nA: Nitrogen is an unreactive inert gas. Flushing chips bags with nitrogen expels oxygen, preventing the fats and oils from getting oxidised and becoming rancid."
+  },
+  {
+    "id": "ch1_sec1_exercises",
+    "title": "Textbook Chapter Exercises (Questions 1 to 20)",
+    "pages": "14-16",
+    "section": "Exercises",
+    "keywords": [
+      "exercises",
+      "lead oxide carbon redox",
+      "thermite reaction",
+      "hydrochloric acid iron filings",
+      "respiration exothermic",
+      "decomposition opposite combination",
+      "refining silver",
+      "paint on iron rust prevention"
+    ],
+    "text": "Key Textbook Exercise Questions & Solutions:\n1. Reaction: 2PbO(s) + C(s) -> 2Pb(s) + CO2(g).\n   Incorrect statements: (a) Lead is getting reduced (it is lead oxide that is reduced), (b) Carbon dioxide is getting oxidised (carbon is oxidised). Correct answer: (i) (a) and (b).\n2. Fe2O3 + 2Al -> Al2O3 + 2Fe is an example of a displacement reaction (Aluminium displaces Iron).\n3. Adding dilute HCl to iron filings: Fe(s) + 2HCl(aq) -> FeCl2(aq) + H2(g). Hydrogen gas and iron(II) chloride are produced.\n4. Balanced chemical equation: An equation having equal number of atoms of each element on both sides. Required because mass can neither be created nor destroyed.\n9. Exothermic vs Endothermic: Exothermic reactions release heat (e.g. burning coal C + O2 -> CO2 + Heat, respiration). Endothermic reactions absorb heat/energy (e.g. thermal decomposition of CaCO3 -> CaO + CO2).\n10. Why respiration is exothermic: Glucose from carbohydrates combines with oxygen in body cells, breaking down into CO2 and H2O and liberating energy.\n11. Decomposition vs Combination: In combination, two or more reactants unite to form one single product (A + B -> AB). In decomposition, one single reactant breaks down into multiple products (AB -> A + B).\n17. Shiny brown element 'X' on heating becomes black: Element 'X' is Copper (Cu). The black compound is Copper(II) oxide (CuO), formed by 2Cu + O2 -> 2CuO.\n18. Why paint iron articles: Paint creates a protective barrier preventing iron from coming in contact with moist air and oxygen, thereby preventing rusting and corrosion."
+  }
+]
